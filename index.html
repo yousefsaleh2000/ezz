@@ -89,6 +89,20 @@
     </footer>
     <script>
       document.getElementById("demo").innerHTML= "&copy; " +  new Date().getFullYear() + " العز للدواجن - جميع الحقوق محفوظة"
+            document.addEventListener('DOMContentLoaded', function() {
+        google.script.run
+          .withSuccessHandler(function(stats) {
+            if (stats) {
+              document.getElementById('statTotalProducts').textContent = stats.totalProducts || 0;
+              document.getElementById('statTotalCategories').textContent = stats.totalCategories || 0;
+              document.getElementById('statAvgUnitPrice').textContent = (stats.avgUnitPrice || 0).toFixed(2);
+            }
+          })
+          .withFailureHandler(function(err) {
+            console.error('فشل تحميل الإحصائيات:', err);
+          })
+          .getProductStats();
+      });
     </script>
   </body>
 </html>
