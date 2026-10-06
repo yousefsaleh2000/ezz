@@ -1,3 +1,3 @@
 function displayYear() {
-  return new Date().getFullYear();
+  document.getElementById("demo").innerText = new Date().getFullYear();
 }
