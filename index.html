@@ -22,7 +22,10 @@
     <div></div>
     <footer>
       <p>&copy; العز للدواجن - جميع الحقوق محفوظة.</p>
-      <p id="demo" onclick="this.innerText=displayYear()">Display year here!</p>
+      <p id="demo"></p>
     </footer>
+    <script>
+      document.getElementById("demo").innerText="&copy;" +  new Date().getFullYear() + "العز للدواجن - جميع الحقوق محفوظة"
+    </script>
   </body>
 </html>
