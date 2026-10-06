@@ -21,7 +21,69 @@
         <a href="#">الإعدادات</a>
       </div>
     </nav>
-    <div></div>
+
+    <h1>الرئيسية - تطبيق الويب</h1>
+    <p>مرحباً بك في نظام "العز للدواجن". يمكنك التنقل بسهولة بين كافة أجزاء النظام من خلال خريطة الموقع أدناه:</p>
+
+    <!-- Dynamic Summary Statistic Cards -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📦</div>
+        <div class="stat-details">
+          <div class="stat-title">إجمالي المنتجات</div>
+          <div class="stat-value" id="statTotalProducts">--</div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">🏷️</div>
+        <div class="stat-details">
+          <div class="stat-title">إجمالي المجموعات</div>
+          <div class="stat-value" id="statTotalCategories">--</div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <div class="stat-details">
+          <div class="stat-title">متوسط سعر الوحدة</div>
+          <div class="stat-value" id="statAvgUnitPrice">--</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>خريطة الموقع (Site Map)</h2>
+      <div class="sitemap-grid">
+        <a href="#" class="sitemap-card">
+          <div class="sitemap-icon">📦</div>
+          <div class="sitemap-info">
+            <div class="sitemap-title">إدارة المنتجات</div>
+            <div class="sitemap-desc">إضافة وتعديل وحذف المنتجات، مع قارئ الباركود وقاعدة البيانات.</div>
+          </div>
+          <span class="sitemap-badge">الانتقال ➔</span>
+        </a>
+
+        <a href="#" class="sitemap-card">
+          <div class="sitemap-icon">📋</div>
+          <div class="sitemap-info">
+            <div class="sitemap-title">طلب مستلزمات الفروع</div>
+            <div class="sitemap-desc">صفحة مخصصة لمدراء الفروع لتقديم طلبات التوريد والمستلزمات.</div>
+          </div>
+          <span class="sitemap-badge">الانتقال ➔</span>
+        </a>
+
+        <a href="#" class="sitemap-card">
+          <div class="sitemap-icon">⚙️</div>
+          <div class="sitemap-info">
+            <div class="sitemap-title">الإعدادات</div>
+            <div class="sitemap-desc">تعديل معرف جدول البيانات (Spreadsheet ID) والإعدادات العامة.</div>
+          </div>
+          <span class="sitemap-badge">الانتقال ➔</span>
+        </a>
+      </div>
+    </div>
+
     <footer>
       <p id="demo"></p>
     </footer>
